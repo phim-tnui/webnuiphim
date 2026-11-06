@@ -1,0 +1,51 @@
+{
+  "id": "org.phimtnui.pro.addon",
+  "version": "4.1.0",
+  "name": "PHIMTNUI PRO - Rạp Phim & Truyền Hình Trực Tuyến",
+  "description": "Addon Xem Phim Lẻ, Phim Bộ, Thuyết Minh 4K & Truyền Hình Trực Tiếp Bóng Đá cho Nuvio, Stremio, Android TV & MobiTV.",
+  "logo": "https://rapnha.github.io/img/tv-02-trang-chu.jpg",
+  "background": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=85&w=2070&auto=format&fit=crop",
+  "resources": ["catalog", "meta", "stream", "subtitles"],
+  "types": ["movie", "series", "tv"],
+  "idPrefixes": ["tt", "kitsu", "tn_", "tv_", "ophim_", "kkphim_", "nguonc_"],
+  "behaviorHints": {
+    "configurable": true,
+    "configurationRequired": false
+  },
+  "catalogs": [
+    {
+      "type": "tv",
+      "id": "tv_tong_hop",
+      "name": "Truyền Hình Tổng Hợp (VTV, HTV, SCTV, Quốc Tế)"
+    },
+    {
+      "type": "tv",
+      "id": "sports_live_matches",
+      "name": "Trực Tiếp Bóng Đá & Thể Thao"
+    },
+    {
+      "type": "movie",
+      "id": "cat_phim_moi_cap_nhat",
+      "name": "Phim Mới Cập Nhật",
+      "extra": [{ "name": "search", "isRequired": false }, { "name": "skip", "isRequired": false }]
+    },
+    {
+      "type": "movie",
+      "id": "cat_phim_le",
+      "name": "Phim Lẻ Mới",
+      "extra": [{ "name": "search", "isRequired": false }, { "name": "skip", "isRequired": false }]
+    },
+    {
+      "type": "series",
+      "id": "cat_phim_bo",
+      "name": "Phim Bộ Đang Chiếu",
+      "extra": [{ "name": "search", "isRequired": false }, { "name": "skip", "isRequired": false }]
+    },
+    {
+      "type": "movie",
+      "id": "cat_phim_le_thuyet_minh",
+      "name": "Phim Thuyết Minh & Lồng Tiếng",
+      "extra": [{ "name": "search", "isRequired": false }, { "name": "skip", "isRequired": false }]
+    }
+  ]
+}

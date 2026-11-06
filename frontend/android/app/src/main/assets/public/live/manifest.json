@@ -1,0 +1,22 @@
+{
+  "id": "org.phimtnui.live.addon",
+  "version": "4.1.0",
+  "name": "PHIMTNUI LIVE TV - Truyền Hình & Bóng Đá",
+  "description": "Truyền hình trực tiếp VTV, HTV, VTVcab, Quốc Tế & Bóng Đá Live tốc độ cao cho Nuvio & Stremio.",
+  "logo": "https://rapnha.github.io/img/tv-03-top-10.jpg",
+  "resources": ["catalog", "meta", "stream"],
+  "types": ["tv"],
+  "idPrefixes": ["tv_", "tn_"],
+  "catalogs": [
+    {
+      "type": "tv",
+      "id": "tv_tong_hop",
+      "name": "Toàn Bộ Kênh Truyền Hình"
+    },
+    {
+      "type": "tv",
+      "id": "sports_live_matches",
+      "name": "Bóng Đá Trực Tiếp"
+    }
+  ]
+}

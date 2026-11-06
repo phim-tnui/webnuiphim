@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="320dp"
+    android:height="180dp"
+    android:viewportWidth="320"
+    android:viewportHeight="180">
+
+    <!-- Deep Luxury Cinema Backdrop -->
+    <path android:pathData="M0,0h320v180h-320z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="0"
+                android:startY="0"
+                android:endX="320"
+                android:endY="180"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#141E36" />
+                <item android:offset="0.55" android:color="#0B1020" />
+                <item android:offset="1.0" android:color="#060811" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Subtle Gold Inner Frame -->
+    <path
+        android:pathData="M10,10L310,10A12,12 0,0 1,322 22L322,158A12,12 0,0 1,310 170L10,170A12,12 0,0 1,-2 158L-2,22A12,12 0,0 1,10 10z"
+        android:strokeWidth="1.5"
+        android:strokeColor="#33F5B82E"
+        android:fillColor="#00000000" />
+
+    <!-- Ambient Glow Behind Left Emblem -->
+    <path
+        android:pathData="M68,90m-44,0a44,44 0,1 1,88 0a44,44 0,1 1,-88 0"
+        android:fillColor="#F5B82E"
+        android:fillAlpha="0.10" />
+
+    <!-- Left 3D P-Play Cinema Emblem (Centered at 68, 90) -->
+    <path
+        android:fillColor="#F7B928"
+        android:pathData="M43,54 C46.5,54 49,56.5 49,60 L49,120 C49,123.5 46.5,126 43,126 C39.5,126 37,123.5 37,120 L37,60 C37,56.5 39.5,54 43,54 Z" />
+    <path
+        android:fillColor="#F5A623"
+        android:pathData="M56,55 L98,79 C102.5,81.5 102.5,88.5 98,91 L56,115 C51.5,117.5 46.5,114.5 46.5,109 L46.5,97 L76,85 L46.5,73 L46.5,61 C46.5,55.5 51.5,52.5 56,55 Z" />
+    <path
+        android:fillColor="#84F828"
+        android:pathData="M56,75 L74,85 L56,95 Z" />
+    <path
+        android:fillColor="#84F828"
+        android:pathData="M62,120m-6,0a6,6 0,1 1,12 0a6,6 0,1 1,-12 0" />
+
+    <!-- Right Vector Typography: 'PHIM' (Lime/Emerald) + 'TNUI' (White) -->
+    <!-- P -->
+    <path android:fillColor="#84F828" android:pathData="M118,64 h16 c7,0 12,4.5 12,11 c0,6.5 -5,11 -12,11 h-9 v12 h-7 z M125,70 v10 h8 c3,0 5,-2 5,-5 c0,-3 -2,-5 -5,-5 z" />
+    <!-- H -->
+    <path android:fillColor="#84F828" android:pathData="M151,64 h7 v13 h12 v-13 h7 v34 h-7 v-14 h-12 v14 h-7 z" />
+    <!-- I -->
+    <path android:fillColor="#84F828" android:pathData="M184,64 h7 v34 h-7 z" />
+    <!-- M -->
+    <path android:fillColor="#84F828" android:pathData="M198,64 h8 l9,18 l9,-18 h8 v34 h-7 v-21 l-7.5,15 h-5 l-7.5,-15 v21 h-7 z" />
+
+    <!-- T -->
+    <path android:fillColor="#FFFFFF" android:pathData="M118,108 h24 v6 h-8.5 v24 h-7 v-24 h-8.5 z" />
+    <!-- N -->
+    <path android:fillColor="#FFFFFF" android:pathData="M147,108 h7 l13,19 v-19 h7 v30 h-7 l-13,-19 v19 h-7 z" />
+    <!-- U -->
+    <path android:fillColor="#FFFFFF" android:pathData="M181,108 h7 v18 c0,4 2.5,6.5 6.5,6.5 c4,0 6.5,-2.5 6.5,-6.5 v-18 h7 v18.5 c0,7.5 -5.5,12.2 -13.5,12.2 c-8,0 -13.5,-4.7 -13.5,-12.2 z" />
+    <!-- I -->
+    <path android:fillColor="#FFFFFF" android:pathData="M215,108 h7 v30 h-7 z" />
+    <!-- Gold Dot -->
+    <path android:fillColor="#F5B82E" android:pathData="M232,134m-4,0a4,4 0,1 1,8 0a4,4 0,1 1,-8 0" />
+
+    <!-- 4K Badge Pill -->
+    <path android:fillColor="#F5B82E" android:pathData="M244,66 h48 a6,6 0 0 1 6,6 v16 a6,6 0 0 1 -6,6 h-48 a6,6 0 0 1 -6,-6 v-16 a6,6 0 0 1 6,-6 z" />
+    <path android:fillColor="#0B1020" android:pathData="M254,74 h5 v8 h3 v4 h-3 v3 h-4 v-3 h-7 v-3.5 l6,-8.5 z M254,78.5 l-3,4.5 h3 z M268,74 h4.5 v6 l5.5,-6 h5.5 l-6.5,7 l7,8 h-5.5 l-5,-6 l-1,1 v5 h-4.5 z" />
+</vector>
