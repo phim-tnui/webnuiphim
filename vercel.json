@@ -1,0 +1,33 @@
+{
+  "version": 2,
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "functions": {
+    "api/index.js": {
+      "includeFiles": "{sources.js,scraper.js,sub-harvester.js,ai-source-finder.js,live-tv-health.js,bot-checker.js,common-utils.js,comet-source.js,hdhub-source.js,live_channels.json,api_endpoints.json,scraped_streams.json,scraped_movies.json,dist/index.html,dist/assets/**}"
+    }
+  },
+  "headers": [
+    {
+      "source": "/apk/(.*)\\.apk",
+      "headers": [
+        { "key": "Content-Type", "value": "application/vnd.android.package-archive" },
+        { "key": "Cache-Control", "value": "public, max-age=3600" }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Access-Control-Allow-Origin", "value": "*" },
+        { "key": "Access-Control-Allow-Methods", "value": "GET, HEAD, POST, OPTIONS" },
+        { "key": "Access-Control-Allow-Headers", "value": "*" }
+      ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/((?!assets/|apk/).*)",
+      "destination": "/api/index.js"
+    }
+  ]
+}

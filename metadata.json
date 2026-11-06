@@ -1,0 +1,11 @@
+{
+  "name": "PHIM.TNUI Cinema 2026",
+  "description": "PHIM.TNUI Cinema 2026 - Rạp Phim Tại Gia & Truyền Hình Trực Tiếp 4K.",
+  "prompt": "PHIM.TNUI Cinema 2026",
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
