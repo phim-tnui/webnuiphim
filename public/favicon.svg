@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="38%" r="65%">
+      <stop offset="0%" stop-color="#1A2542" />
+      <stop offset="55%" stop-color="#0B1020" />
+      <stop offset="100%" stop-color="#060811" />
+    </radialGradient>
+    <linearGradient id="rimGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE68A" stop-opacity="0.45" />
+      <stop offset="50%" stop-color="#84F828" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0.35" />
+    </linearGradient>
+    <linearGradient id="goldPillar" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFF5B8" />
+      <stop offset="45%" stop-color="#F7B928" />
+      <stop offset="100%" stop-color="#C87A08" />
+    </linearGradient>
+    <linearGradient id="goldWing" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF099" />
+      <stop offset="55%" stop-color="#F5A623" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+    <linearGradient id="emeraldSpark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A3FF47" />
+      <stop offset="100%" stop-color="#10B981" />
+    </linearGradient>
+    <filter id="softShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000000" flood-opacity="0.65" />
+    </filter>
+  </defs>
+
+  <!-- Squircle Luxury Cinema Background -->
+  <rect x="16" y="16" width="480" height="480" rx="112" fill="url(#bgGlow)" />
+  <rect x="19" y="19" width="474" height="474" rx="109" fill="none" stroke="url(#rimGrad)" stroke-width="5" />
+
+  <!-- Ambient Center Spotlight -->
+  <circle cx="256" cy="248" r="145" fill="#F5B82E" fill-opacity="0.07" />
+
+  <!-- Centered P-Play Emblem (Strictly inside 60% Safe Zone: x=148..372, y=126..386) -->
+  <g filter="url(#softShadow)">
+    <!-- Left Vertical Cinema Pillar of 'P' -->
+    <rect x="150" y="128" width="46" height="256" rx="23" fill="url(#goldPillar)" />
+
+    <!-- Sculpted Play-Loop Wing of 'P' -->
+    <path
+      d="M214 130 L356 208 C372 217 372 239 356 248 L214 326 C199 334 182 323 182 306 L182 268 L284 228 L182 188 L182 150 C182 133 199 122 214 130 Z"
+      fill="url(#goldWing)"
+    />
+
+    <!-- Inner Emerald-Lime Cinema Play Core & Lower Spark -->
+    <path
+      d="M216 196 L278 228 L216 260 Z"
+      fill="url(#emeraldSpark)"
+    />
+    <rect x="214" y="340" width="44" height="44" rx="22" fill="url(#emeraldSpark)" />
+  </g>
+</svg>
